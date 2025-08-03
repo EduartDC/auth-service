@@ -30,4 +30,30 @@ El servicio permite realizar login seguro mediante JWT, validación de roles (us
 
 ## 📂 Estructura del Proyecto
 
+auth-service/
+├── src/main/java/com/empresa/auth/
+│   ├── adapter/
+│   │   ├── in/
+│   │   │   └── web/
+│   │   │       ├── controller/     ← @RestController, @Controller (Endpoints REST)
+│   │   │       └── dto/            ← POJOs simples para Request/Response (sin anotaciones específicas)
+│   │   ├── out/persistence/        ← @Repository (Implementación de puertos de salida, acceso a BD)
+│   ├── application/
+│   │   ├── port/in/                ← Interfaces de casos de uso (sin anotaciones)
+│   │   ├── port/out/               ← Interfaces de acceso a infraestructura (sin anotaciones)
+│   │   └── service/                ← @Service (Implementación de casos de uso)
+│   ├── domain/                    ← Entidades y excepciones del dominio (POJOs, @Entity en caso de JPA)
+│   └── config/
+│       ├── security/              ← @Configuration (Seguridad JWT, Spring Security)
+│       ├── swagger/               ← @Configuration (Documentación Swagger/OpenAPI)
+│       ├── database/              ← @Configuration (Configuraciones específicas BD)
+│       └── general/               ← @Configuration (Beans generales y otros setups)
+├── src/main/resources/
+│   ├── application.yml            ← Configuración principal
+│   ├── logback-spring.xml         ← Configuración de logs
+│   └── ...
+├── Dockerfile                    ← Para contenerización
+├── pom.xml                       ← Gestión de dependencias y build
+└── README.md                     ← Documentación del proyecto
+
 
