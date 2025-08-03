@@ -58,4 +58,33 @@ auth-service/
 └── README.md                     ← Documentación del proyecto
 
 
+---
+
+## 🔒 Seguridad
+
+- Autenticación basada en JWT con Spring Security  
+- Control de acceso por roles (`USER`, `ADMIN`)  
+- Validación de número de intentos para bloqueo de cuenta (en desarrollo)  
+- Filtros personalizados para manejo de errores y acceso denegado  
+- Preparado para integración con sistemas de mensajería para auditoría y alertas
+
+---
+
+## 🚀 Cómo ejecutar
+
+### Requisitos previos
+
+- Java 17 instalado  
+- Base de datos PostgreSQL o MySQL configurada  
+- Maven para compilación  
+- Docker (opcional para contenerización)
+
+### Pasos para levantar localmente
+
+1. Clonar repositorio:
+```bash
+git clone https://github.com/tuusuario/auth-service.git
+cd auth-service
+
+
 
