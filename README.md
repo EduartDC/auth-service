@@ -86,12 +86,67 @@ auth-service/
 - Maven para compilación  
 - Docker (opcional para contenerización)
 
-### Pasos para levantar localmente
+Claro, aquí tienes el bloque actualizado sin el paso 2 y con el resto de pasos incluidos:
 
-1. Clonar repositorio:
-```bash
-git clone https://github.com/tuusuario/auth-service.git
-cd auth-service
+markdown
+Copiar
+Editar
+## 🛠️ Instalación y configuración
+
+### Requisitos previos
+
+- **Java 17** instalado y configurado en tu sistema  
+- **Maven** para gestión de dependencias y compilación  
+- **Base de datos** MySQL o PostgreSQL configurada y accesible  
+- **Docker** instalado (opcional, para contenerización)  
+
+---
+
+### Pasos para clonar y configurar el proyecto
+
+1. Clona el repositorio:
+
+   ```bash
+   git clone https://github.com/tuusuario/auth-service.git
+   cd auth-service
+    ```
+Construye el proyecto con Maven:
+
+bash
+Copiar
+Editar
+mvn clean install
+Ejecuta la aplicación localmente:
+
+bash
+Copiar
+Editar
+mvn spring-boot:run
+Verifica que la aplicación esté corriendo accediendo a:
+
+bash
+Copiar
+Editar
+http://localhost:8080/swagger-ui.html
+(Opcional) Ejecutar con Docker
+Construye la imagen Docker:
+
+bash
+Copiar
+Editar
+docker build -t auth-service:latest .
+Ejecuta el contenedor:
+
+bash
+Copiar
+Editar
+docker run -p 8080:8080 auth-service:latest
+La aplicación estará disponible en:
+
+bash
+Copiar
+Editar
+http://localhost:8080/swagger-ui.html
 
 
 
