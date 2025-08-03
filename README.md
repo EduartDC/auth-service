@@ -28,8 +28,8 @@ El servicio permite realizar login seguro mediante JWT, validación de roles (us
 | Spring Data JPA       | Para acceso a base de datos                  |
 | Base de datos         | MySQL                                        |
 | Docker                | Contenerización para despliegue              |
-| Kafka / RabbitMQ      | Preparado para mensajería de eventos futuros |
-| Swagger (SpringDoc)   | Documentación API automática                 |
+| Kafka                 | Preparado para mensajería de eventos futuros |
+| Swagger               | Documentación API automática                 |
 | Lombok                | Reducción de código boilerplate              |
 
 
