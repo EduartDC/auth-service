@@ -77,30 +77,6 @@ auth-service/
 
 ---
 
-## 🚀 Cómo ejecutar
-
-### Requisitos previos
-
-- Java 17 instalado  
-- Base de datos PostgreSQL o MySQL configurada  
-- Maven para compilación  
-- Docker (opcional para contenerización)
-
-Claro, aquí tienes el bloque actualizado sin el paso 2 y con el resto de pasos incluidos:
-
-markdown
-Copiar
-Editar
-## 🛠️ Instalación y configuración
-
-### Requisitos previos
-
-- **Java 17** instalado y configurado en tu sistema  
-- **Maven** para gestión de dependencias y compilación  
-- **Base de datos** MySQL o PostgreSQL configurada y accesible  
-- **Docker** instalado (opcional, para contenerización)  
-
----
 
 
 
