@@ -43,7 +43,7 @@ auth-service/
 │   │   ├── port/in/                ← Interfaces de casos de uso
 │   │   ├── port/out/               ← Interfaces de acceso a infraestructura
 │   │   └── service/                ← @Service (Implementación de casos de uso)
-│   ├── domain/                    ← Entidades y excepciones del dominio (POJOs, @Entity en caso de JPA)
+│   ├── domain/                     ← Entidades y excepciones del dominio (@Entity en caso de JPA)
 │   └── config/
 │       ├── security/              ← @Configuration (Seguridad JWT, Spring Security)
 │       ├── swagger/               ← @Configuration (Documentación Swagger/OpenAPI)
