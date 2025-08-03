@@ -36,12 +36,12 @@ auth-service/
 │   ├── adapter/
 │   │   ├── in/
 │   │   │   └── web/
-│   │   │       ├── controller/     ← @RestController, @Controller (Endpoints REST)
+│   │   │       ├── controller/     ← @RestController, @Controller
 │   │   │       └── dto/            ← POJOs simples para Request/Response (sin anotaciones específicas)
 │   │   ├── out/persistence/        ← @Repository (Implementación de puertos de salida, acceso a BD)
 │   ├── application/
-│   │   ├── port/in/                ← Interfaces de casos de uso (sin anotaciones)
-│   │   ├── port/out/               ← Interfaces de acceso a infraestructura (sin anotaciones)
+│   │   ├── port/in/                ← Interfaces de casos de uso
+│   │   ├── port/out/               ← Interfaces de acceso a infraestructura
 │   │   └── service/                ← @Service (Implementación de casos de uso)
 │   ├── domain/                    ← Entidades y excepciones del dominio (POJOs, @Entity en caso de JPA)
 │   └── config/
