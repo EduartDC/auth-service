@@ -1,11 +1,9 @@
 ![Java](https://img.shields.io/badge/Java-17-blue?logo=java&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen?logo=springboot&logoColor=white)
 ![Spring Security](https://img.shields.io/badge/Spring%20Security-6.x-green?logo=springsecurity&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-14-blue?logo=postgresql&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-24-blue?logo=docker&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-8.0-blue?logo=mysql&logoColor=white)
 ![Maven](https://img.shields.io/badge/Maven-3.9-red?logo=apachemaven&logoColor=white)
 ![Kafka](https://img.shields.io/badge/Kafka-3.4-yellow?logo=apachekafka&logoColor=black)
-![RabbitMQ](https://img.shields.io/badge/RabbitMQ-3.11-orange?logo=rabbitmq&logoColor=white)
 
 # Auth Service - Microservicio de Autenticación
 
