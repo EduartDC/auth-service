@@ -30,6 +30,7 @@ El servicio permite realizar login seguro mediante JWT, validación de roles (us
 
 ## 📂 Estructura del Proyecto
 
+```plaintext
 auth-service/
 ├── src/main/java/com/empresa/auth/
 │   ├── adapter/
@@ -55,5 +56,6 @@ auth-service/
 ├── Dockerfile                    ← Para contenerización
 ├── pom.xml                       ← Gestión de dependencias y build
 └── README.md                     ← Documentación del proyecto
+
 
 
