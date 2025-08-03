@@ -57,7 +57,7 @@ auth-service/
 ├── pom.xml                       ← Gestión de dependencias y build
 └── README.md                     ← Documentación del proyecto
 
-
+```
 ---
 
 ## 🔒 Seguridad
