@@ -92,6 +92,12 @@
 			<version>4.4.0</version>
 		</dependency>
 
+		<!-- Hibernate Validator para validaciones -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+
 		<!-- MapStruct -->
 		<dependency>
 			<groupId>org.mapstruct</groupId>
