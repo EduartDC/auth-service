@@ -16,46 +16,6 @@ El servicio permite realizar login seguro mediante JWT, validación de roles (us
 
 ---
 
-## ⚙️ Configuración de Desarrollo
-
-### 🔐 Variables de Entorno
-
-**IMPORTANTE:** Este proyecto utiliza variables de entorno para mantener las credenciales seguras y NO subir información sensible a Git.
-
-#### Configuración Local:
-
-1. **Copia el archivo de ejemplo:**
-
-   ```bash
-   cp .env.example .env
-   ```
-
-2. **Edita el archivo `.env` con tus credenciales reales:**
-
-   ```bash
-   # Base de datos PostgreSQL
-   DB_HOST=localhost
-   DB_PORT=5432
-   DB_NAME=BoletosDB
-   DB_USERNAME=postgres
-   DB_PASSWORD=tu-password-real
-
-   # JWT Secret (genera uno único para cada entorno)
-   JWT_SECRET=tu-jwt-secret-seguro
-   ```
-
-3. **El archivo `.env` está en `.gitignore`** - nunca se subirá a Git ✅
-
-### 📊 Base de Datos
-
-Asegúrate de tener PostgreSQL instalado y crear la base de datos:
-
-```sql
-CREATE DATABASE "BoletosDB";
-```
-
----
-
 ## ⚙️ Tecnologías y Herramientas
 
 | Tecnología      | Versión / Detalle                            |
@@ -116,3 +76,42 @@ auth-service/
 - Preparado para integración con sistemas de mensajería para auditoría y alertas
 
 ---
+
+## ⚙️ Configuración de Desarrollo
+
+### 🔐 Variables de Entorno
+
+**IMPORTANTE:** Este proyecto utiliza variables de entorno para mantener las credenciales seguras y NO subir información sensible a Git.
+
+#### Configuración Local:
+
+1. **Copia el archivo de ejemplo:**
+
+   ```bash
+   cp .env.example .env
+   ```
+
+2. **Edita el archivo `.env` con tus credenciales reales:**
+
+   ```bash
+   # Base de datos PostgreSQL
+   DB_HOST=localhost
+   DB_PORT=5432
+   DB_NAME=BoletosDB
+   DB_USERNAME=postgres
+   DB_PASSWORD=tu-password-real
+
+   # JWT Secret (genera uno único para cada entorno)
+   JWT_SECRET=tu-jwt-secret-seguro
+   ```
+
+3. **El archivo `.env` está en `.gitignore`** - nunca se subirá a Git ✅
+
+### 📊 Base de Datos
+
+Asegúrate de tener PostgreSQL instalado y crear la base de datos:
+
+```sql
+CREATE DATABASE "BoletosDB";
+```
+
