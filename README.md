@@ -1,7 +1,7 @@
 ![Java](https://img.shields.io/badge/Java-17-blue?logo=java&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen?logo=springboot&logoColor=white)
 ![Spring Security](https://img.shields.io/badge/Spring%20Security-6.x-green?logo=springsecurity&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-8.0-blue?logo=mysql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-blue?logo=postgresql&logoColor=white)
 ![Maven](https://img.shields.io/badge/Maven-3.9-red?logo=apachemaven&logoColor=white)
 ![Kafka](https://img.shields.io/badge/Kafka-3.4-yellow?logo=apachekafka&logoColor=black)
 
@@ -26,7 +26,7 @@ El servicio permite realizar login seguro mediante JWT, validación de roles (us
 | JWT             | JSON Web Tokens para autenticación           |
 | MapStruct       | Para mapeo automático entre Entity y DTO     |
 | Spring Data JPA | Para acceso a base de datos                  |
-| Base de datos   | MySQL                                        |
+| Base de datos   | PostgreSQL                                   |
 | Docker          | Contenerización para despliegue              |
 | Kafka           | Preparado para mensajería de eventos futuros |
 | Swagger         | Documentación API automática                 |
