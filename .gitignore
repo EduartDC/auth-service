@@ -46,8 +46,14 @@ out/
 .DS_Store
 Thumbs.db
 
-# Environment
+# Environment files
 .env
+.env.local
+.env.production
+*.env
+
+# Application properties with secrets (backup)
+application-secrets.properties
 
 # Others
 *.swp

@@ -16,22 +16,61 @@ El servicio permite realizar login seguro mediante JWT, validación de roles (us
 
 ---
 
+## ⚙️ Configuración de Desarrollo
+
+### 🔐 Variables de Entorno
+
+**IMPORTANTE:** Este proyecto utiliza variables de entorno para mantener las credenciales seguras y NO subir información sensible a Git.
+
+#### Configuración Local:
+
+1. **Copia el archivo de ejemplo:**
+
+   ```bash
+   cp .env.example .env
+   ```
+
+2. **Edita el archivo `.env` con tus credenciales reales:**
+
+   ```bash
+   # Base de datos PostgreSQL
+   DB_HOST=localhost
+   DB_PORT=5432
+   DB_NAME=BoletosDB
+   DB_USERNAME=postgres
+   DB_PASSWORD=tu-password-real
+
+   # JWT Secret (genera uno único para cada entorno)
+   JWT_SECRET=tu-jwt-secret-seguro
+   ```
+
+3. **El archivo `.env` está en `.gitignore`** - nunca se subirá a Git ✅
+
+### 📊 Base de Datos
+
+Asegúrate de tener PostgreSQL instalado y crear la base de datos:
+
+```sql
+CREATE DATABASE "BoletosDB";
+```
+
+---
+
 ## ⚙️ Tecnologías y Herramientas
 
-| Tecnología             | Versión / Detalle                           |
-|-----------------------|----------------------------------------------|
-| Java                  | 17 (OpenJDK 17 LTS)                          |
-| Spring Boot           | 3.x (Spring Framework 6 compatible)          |
-| Spring Security       | 6.x                                          |
-| JWT                   | JSON Web Tokens para autenticación           |
-| MapStruct             | Para mapeo automático entre Entity y DTO     |
-| Spring Data JPA       | Para acceso a base de datos                  |
-| Base de datos         | MySQL                                        |
-| Docker                | Contenerización para despliegue              |
-| Kafka                 | Preparado para mensajería de eventos futuros |
-| Swagger               | Documentación API automática                 |
-| Lombok                | Reducción de código boilerplate              |
-
+| Tecnología      | Versión / Detalle                            |
+| --------------- | -------------------------------------------- |
+| Java            | 17 (OpenJDK 17 LTS)                          |
+| Spring Boot     | 3.x (Spring Framework 6 compatible)          |
+| Spring Security | 6.x                                          |
+| JWT             | JSON Web Tokens para autenticación           |
+| MapStruct       | Para mapeo automático entre Entity y DTO     |
+| Spring Data JPA | Para acceso a base de datos                  |
+| Base de datos   | MySQL                                        |
+| Docker          | Contenerización para despliegue              |
+| Kafka           | Preparado para mensajería de eventos futuros |
+| Swagger         | Documentación API automática                 |
+| Lombok          | Reducción de código boilerplate              |
 
 ---
 
@@ -65,19 +104,15 @@ auth-service/
 └── README.md                     ← Documentación del proyecto
 
 ```
+
 ---
 
 ## 🔒 Seguridad
 
-- Autenticación basada en JWT con Spring Security  
-- Control de acceso por roles (`USER`, `ADMIN`)  
-- Validación de número de intentos para bloqueo de cuenta (en desarrollo)  
-- Filtros personalizados para manejo de errores y acceso denegado  
+- Autenticación basada en JWT con Spring Security
+- Control de acceso por roles (`USER`, `ADMIN`)
+- Validación de número de intentos para bloqueo de cuenta (en desarrollo)
+- Filtros personalizados para manejo de errores y acceso denegado
 - Preparado para integración con sistemas de mensajería para auditoría y alertas
 
 ---
-
-
-
-
-
